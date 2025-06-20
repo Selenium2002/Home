@@ -13,6 +13,7 @@ class ChildClass extends ParentClass {
     }
 }
 
+
 $obj = new ChildClass(); 
 echo $obj->getMessage();  //Hello from Parent
 
