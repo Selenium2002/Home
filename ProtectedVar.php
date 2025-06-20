@@ -13,7 +13,10 @@ class ChildClass extends ParentClass {
     }
 }
 
-$obj = new ChildClass();
-echo $obj->getMessage();  
+$obj = new ChildClass(); 
+echo $obj->getMessage();  //Hello from Parent
+
 echo $obj->message;    
+// ( ! ) Fatal error: Uncaught Error: Cannot access protected property ChildClass::$message in D:\Ismail\Back End\OOP\Practice\samples\ProtectedVar.php on line 18
+// ( ! ) Error: Cannot access protected property ChildClass::$message in D:\Ismail\Back End\OOP\Practice\samples\ProtectedVar.php on line 18
 ?>
